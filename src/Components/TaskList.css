@@ -1,0 +1,89 @@
+
+/* Header with search bar and new task button */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+.task-header input {
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+.new-task {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-task:hover {
+    background-color: #0056b3;
+  }
+
+
+/* Dropdown menu container */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position it below the button */
+    right: 0; /* Align it to the right of the parent container */
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    min-width: 120px; /* Minimum width for dropdown */
+  }
+  
+/* Dropdown buttons */
+.dropdown-menu button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dropdown-menu button:hover{
+    background-color: #f2f2f2; /* Highlight on hover */
+    color: #007bff; /* Optional: change text color on hover */
+  }
+  
+  /* Optional: for styling the three-dot icon */
+.menu-button svg {
+    color: #333;
+    font-size: 20px;
+  }
+  
+.dropdown-menu button:first-child {
+    border-bottom: 1px solid #ddd; /* Separate Edit and Delete buttons */
+  }
+  
+  
+/* Dropdown menu : 
+This is to adjust the position of Edit and delete after clicking on 3 dots */
+.action-menu {
+    position: relative; 
+  }  
+  
+  
+/* Three-dot menu button */
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
